@@ -31,6 +31,15 @@ export default function Footer() {
 			</ul>
 		</div>
 		<div>
+			<li><img src="/img/Footer/Tilda_Icons_26sn_instagram.png"></img></li>
+			<li><img src="/img/Footer/Vector1.png"></img></li>
+			<li><img src="/img/Footer/Tilda_Icons_26sn_telegram.png"></img></li>
+			<li><img src="/img/Footer/Tilda_Icons_26sn_whatsapp.png"></img></li>
+			<span>ООО "Трансстиль-Групп" УНП: 190929286, юридический адрес: 220030, г. Москва, ул. Ленина, д.46, пом.3</span>
+			<span>Дата регистрации интернет-магазина в Торговом реестре: 07 апреля 2015г. №156730</span>
+			<span>Свидетельство о гос. регистрации №190929286 от 18.12.2007</span>
+		</div>
+		<div>
 			<ul>
 				<li>Букеты</li>
 				<li>Монобукеты</li>
@@ -58,11 +67,36 @@ export default function Footer() {
 				<li>Контакты</li>
 				<li>Помощь</li>
 			</ul>
+			<span>Политика конфиденциальности</span>
 		</div>
 		<div>
 			<p>Будь в курсе самых лучших предложений и свежих новостей</p>
 			<input type="text" placeholder="Введите электронную почту "></input>
 			<button>Подписаться</button>
+			<div>
+				<span>г. Минск, ул. Ленина, д.46, пом.3</span>
+				<a href="mailto:zakaz@gvozdika.by">
+					<span>zakaz@gvozdika.by</span>
+				</a>
+				<span>Пн-Пт с 8.00-22.00</span>
+				<span>Сб-Вс с 10.00 -22.00</span>
+				<span>Пользовательское соглашение</span>
+				<span>© Gvozdica.by 2017 - 2021</span>
+			</div>
+		</div>
+		<div>
+			<ul>
+				<li><img src="/img/Footer/Frame 2524.png"></img></li>
+				<li><img src="/img/Footer/Frame 2525.png"></img></li>
+				<li><img src="/img/Footer/Frame 2526.png"></img></li>
+				<li><img src="/img/Footer/Frame 2527.png"></img></li>
+				<li><img src="/img/Footer/Frame 2528.png"></img></li>
+				<li><img src="/img/Footer/Frame 2529.png"></img></li>
+				<li><img src="/img/Footer/Frame 2530.png"></img></li>
+				<li><img src="/img/Footer/Frame 2531.png"></img></li>
+				<li><img src="/img/Footer/Frame 2532.png"></img></li>
+				<li><img src="/img/Footer/Frame 2533.png"></img></li>
+			</ul>
 		</div>
 	</>;
 }

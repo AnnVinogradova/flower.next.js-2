@@ -6,10 +6,12 @@ import Advantages from '../components/Advantages/Advantages';
 import Rose from '../components/Rose/Rose';
 import Comment from '../components/Comment/Comment';
 import Instagram from '../components/Instagram/Instagram';
+import HeaderFooter from '../components/Header/HeaderFooter';
 
 
 export default function Main() {
 	return <>
+		<HeaderFooter/>
 		<Categories />
 		<Special />
 		<OfferDay />
