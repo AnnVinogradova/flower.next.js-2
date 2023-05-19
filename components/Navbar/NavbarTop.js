@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const navigation = [
 	{ id: 1, title: 'О магазине', path: '/' },
-	{ id: 1, title: 'Доставка', path: '/delivery' },
-	{ id: 2, title: 'Блог', path: '/blog' },
-	{ id: 1, title: 'Отзывы', path: '/reviews' },
-	{ id: 1, title: 'Контакты', path: '/contacts' }
+	{ id: 2, title: 'Доставка', path: '/delivery' },
+	{ id: 3, title: 'Блог', path: '/blog' },
+	{ id: 4, title: 'Отзывы', path: '/reviews' },
+	{ id: 5, title: 'Контакты', path: '/contacts' }
 ]
 export default function NavbarTop() {
 	return <>

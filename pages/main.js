@@ -11,7 +11,7 @@ import HeaderFooter from '../components/Header/HeaderFooter';
 
 export default function Main() {
 	return <>
-		<HeaderFooter/>
+		<HeaderFooter />
 		<Categories />
 		<Special />
 		<OfferDay />
@@ -20,6 +20,6 @@ export default function Main() {
 		<Advantages />
 		<Comment />
 		<Instagram />
-		
+
 	</>;
 }

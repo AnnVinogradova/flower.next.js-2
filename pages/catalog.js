@@ -1,9 +1,8 @@
-
+import Sidebar from '../components/Sidebar/Sidebar';
+import CatalogFlower from '../components/CatalogFlower/CatalogFlower';
 export default function Catalog() {
 	return <>
-		<ul class="breadcrumb">
-			<li><a href="main">Главная</a></li>
-			<li><a href="catalog">Каталог</a></li>
-		</ul>
+		<Sidebar />
+		<CatalogFlower />
 	</>;
 }
