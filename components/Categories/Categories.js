@@ -9,7 +9,7 @@ export default function Categories() {
 				</li>
 				<li>
 					<img src="/img/main/Categories/author.png" width={50} height={50}></img>
-					<span>Специальные предложения флориста</span>
+					<a href="/ProductCard"><span>Букеты</span></a>
 				</li>
 				<li>
 					<img src="/img/main/Categories/ball.png" width={50} height={50}></img>
