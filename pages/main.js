@@ -7,7 +7,7 @@ import Rose from '../components/Rose/Rose';
 import Comment from '../components/Comment/Comment';
 import Instagram from '../components/Instagram/Instagram';
 import HeaderFooter from '../components/Header/HeaderFooter';
-
+import HowWork from '../components/HowWork';
 
 export default function Main() {
 	return <>
@@ -19,7 +19,7 @@ export default function Main() {
 		<Rift />
 		<Advantages />
 		<Comment />
+		<HowWork/>
 		<Instagram />
-
 	</>;
 }
