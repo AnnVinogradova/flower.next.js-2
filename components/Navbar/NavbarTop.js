@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function NavbarTop () {
 const router = useRouter();
   return <>
-    <nav>
+      <nav>
       <ul>
         <li>
           <Link href="/about" legacyBehavior>
@@ -13,19 +13,19 @@ const router = useRouter();
           </Link>
         </li>
         <li>
-          <Link href="/delivery" legacyBehavior>
-            <a className={router.pathname === '/delivery' ? 'active' : ''}>Доставка</a>
-          </Link>
-          <ul>
-            <li>
-              <Link href="/payment" legacyBehavior>
-                <a className={router.pathname === '/payment' ? 'active' : ''}>Оплата</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/return" legacyBehavior>
-                <a className={router.pathname === '/return' ? 'active' : ''}>Возврат</a>
-              </Link>
+		<Link href="/delivery" legacyBehavior>
+    <a className={router.pathname === '/delivery' ? 'active' : ''}>Доставка</a>
+  </Link>
+  <ul>
+    <li>
+      <Link href="/payment" legacyBehavior>
+        <a className={router.pathname === '/payment' ? 'active' : ''}>Оплата</a>
+      </Link>
+    </li>
+    <li>
+      <Link href="/return" legacyBehavior>
+        <a className={router.pathname === '/return' ? 'active' : ''}>Возврат</a>
+      </Link>
             </li>
           </ul>
         </li>
@@ -37,6 +37,11 @@ const router = useRouter();
         <li>
           <Link href="/reviews" legacyBehavior>
             <a className={router.pathname === '/reviews' ? 'active' : ''}>Отзывы</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/contacts" legacyBehavior>
+            <a className={router.pathname === '/contacts' ? 'active' : ''}>Контакты</a>
           </Link>
         </li>
       </ul>
