@@ -52,7 +52,7 @@ export default function NavbarTop() {
    <div>
     <ul>
      <li>
-      <span onClick={handleSublinksToggle}>Доставка</span>
+      <span>Доставка</span>
      </li>
      <li>
       <span>Пн-Пт 8.00 - 22.00 <br />Сб- Вс 10.00 - 22.00</span>
