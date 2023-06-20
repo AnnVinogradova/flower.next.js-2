@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const navigation = [
- { id: 1, title: 'О магазине', path: '/' },
+ { id: 1, title: 'О магазине', path: '/about shop' },
  { id: 2, title: 'Доставка', path: '/delivery', sublinks: [
    { id: 1, title: 'Оплата', path: '/payment' },
    { id: 2, title: 'Возврат', path: '/return' }
