@@ -1,5 +1,5 @@
 import Link from "next/link"
-export default function Info(){
+export default function ContactInfo(){
     return<>
     <div>
 <ul class="breadcrumb">

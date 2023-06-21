@@ -16,8 +16,8 @@ export default function Advantages() {
 			<div>
 				<span><img src="/img/Main/Advantage/Component 13 (2).png"></img></span>
 			</div>
-			<span>Доставим в любую точку России</span>
-			<p>Доставка по России осуществляется в течении рабочего дня, максимум суток в зависимости от получения нами заказа</p>
+			<span>Доставим в любую точку Москвы</span>
+			<p>Доставка по Москве осуществляется в течении рабочего дня, максимум суток в зависимости от получения нами заказа</p>
 			<div>
 				<span><img src="/img/Main/Advantage/Group.png"></img></span>
 			</div>

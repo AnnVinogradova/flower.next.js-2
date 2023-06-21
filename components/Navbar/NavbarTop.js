@@ -30,11 +30,6 @@ const router = useRouter();
           </ul>
         </li>
         <li>
-          <Link href="/blog" legacyBehavior>
-            <a className={router.pathname === '/blog' ? 'active' : ''}>Блог</a>
-          </Link>
-        </li>
-        <li>
           <Link href="/reviews" legacyBehavior>
             <a className={router.pathname === '/reviews' ? 'active' : ''}>Отзывы</a>
           </Link>

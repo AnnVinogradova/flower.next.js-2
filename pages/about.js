@@ -1,6 +1,6 @@
 
-import Rift from '../components/Rifts/Rift';
-import Shop from '../components/Shop/Shop';
+import Rift from '../components/Rifts/Rift.js';
+import Shop from '../components/Shop/Shop.js';
 export default function About() {
 	return <>
 	<Shop/>

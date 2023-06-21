@@ -1,13 +1,12 @@
-import Categories from '../components/Categories/Categories'
-import OfferDay from '../components/Day/OfferDay';
-import Special from '../components/Special/Special';
-import Rift from '../components/Rifts/Rift';
-import Advantages from '../components/Advantages/Advantages';
-import Rose from '../components/Rose/Rose';
-import Comment from '../components/Comment/Comment';
-import Instagram from '../components/Instagram/Instagram';
-import HeaderFooter from '../components/Header/HeaderFooter';
-import HowWork from '../components/HowWork';
+import Categories from '../components/Categories/Categories.js'
+import OfferDay from '../components/Day/OfferDay.js';
+import Special from '../components/Special/Special.js';
+import Rift from '../components/Rifts/Rift.js';
+import Advantages from '../components/Advantages/Advantages.js';
+import Rose from '../components/Rose/Rose.js';
+import Comment from '../components/Comment/Comment.js';
+import HeaderFooter from '../components/Header/HeaderFooter.js';
+import HowWork from '../components/HowWork.js';
 
 export default function Main() {
 	return <>
