@@ -20,6 +20,5 @@ export default function Main() {
 		<Advantages />
 		<Comment />
 		<HowWork/>
-		<Instagram />
 	</>;
 }
