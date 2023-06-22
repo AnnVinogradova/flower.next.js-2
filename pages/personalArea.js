@@ -1,8 +1,7 @@
+import Private from "../components/Private/Private.js";
 
 export default function PersonalArea() {
 	return <>
-        <Pay/>
-        <Rift />
-        <HowWork/>
+        <Private/>   
 	</>;
 }

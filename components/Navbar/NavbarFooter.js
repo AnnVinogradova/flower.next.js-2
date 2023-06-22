@@ -50,32 +50,30 @@ export default function NavbarFooter() {
 		<div>
 			<input type="text" placeholder="Найти букет..."></input>
 		</div>
+		<div>
 		<ul>
 			<li>
-			<Link href="/PersonalArea" legacyBehavior>
-  <div>
-    <img src="/img/Header/Frame 1407.png"></img>
-    <a className="button"></a>
-  </div>
-</Link>
+			    <Link href="/personalArea" legacyBehavior>
+            <div>
+               <img src="/img/Header/Frame 1407.png"></img>
+            </div>
+            </Link>
 			</li>
 			<li>
 			<Link href="/cart" legacyBehavior>
-  <div>
-    <img src="/img/Header/Frame 1410.png"></img>
-    <a className="button"></a>
-  </div>
-</Link>
+            <div>
+               <img src="/img/Header/Frame 1410.png"></img>
+            </div>
+            </Link>
 			</li>
 			<li>
-			
 			<Link href="/cart" legacyBehavior>
-  <div>
-    <img src="/img/Header/shopping-bag.png"></img>
-    <a className="button">Пусто</a>
-  </div>
-</Link>
+            <div>
+            <img src="/img/Header/shopping-bag.png"></img>
+            </div>
+            </Link>
 			</li>
 		</ul>
+		</div>
 	</>;
 }
