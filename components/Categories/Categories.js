@@ -4,7 +4,7 @@ export default function Categories() {
 		<div>
 			<ul>
 				<li>
-				<img src="/img/Main/Categories/1682358872_38560860.png" width={50} height={50}></img>
+				<img src="/img/Main/Categories/168235887238560860.png" width={50} height={50}></img>
 					<span>Пионы</span>
 				</li>
 				<li>

@@ -1,45 +1,29 @@
-
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+import NextLink from 'next/link'
+import { Link } from '@chakra-ui/react'
 
 export default function NavbarTop () {
-const router = useRouter();
+
   return <>
+  	<Link as={NextLink} href='/about'>
+    О магазине
+</Link>
+<Link as={NextLink} href='/delivery'>
+Доставка
+</Link>
+<Link as={NextLink} href='/payment'>
+Оплата
+</Link>
+<Link as={NextLink} href='/return'>
+Возврат
+</Link>
+<Link as={NextLink} href='/reviews'>
+  Отзывы
+</Link>
+<Link as={NextLink} href='/contacts'>
+  Контакты
+</Link>
       <nav>
-      <ul>
-        <li>
-          <Link href="/about" legacyBehavior>
-            <a className={router.pathname === '/about' ? 'active' : ''}>О магазине</a>
-          </Link>
-        </li>
-        <li>
-		<Link href="/delivery" legacyBehavior>
-    <a className={router.pathname === '/delivery' ? 'active' : ''}>Доставка</a>
-  </Link>
-  <ul>
-    <li>
-      <Link href="/payment" legacyBehavior>
-        <a className={router.pathname === '/payment' ? 'active' : ''}>Оплата</a>
-      </Link>
-    </li>
-    <li>
-      <Link href="/return" legacyBehavior>
-        <a className={router.pathname === '/return' ? 'active' : ''}>Возврат</a>
-      </Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link href="/reviews" legacyBehavior>
-            <a className={router.pathname === '/reviews' ? 'active' : ''}>Отзывы</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/contacts" legacyBehavior>
-            <a className={router.pathname === '/contacts' ? 'active' : ''}>Контакты</a>
-          </Link>
-        </li>
-      </ul>
+  
     </nav>
    <div>
     <ul>
