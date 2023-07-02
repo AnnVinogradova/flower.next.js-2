@@ -1,7 +1,12 @@
+
 import { useState, useEffect } from 'react';
 import Rift from '../Rifts/Rift.js'
-import { Link, Button } from '@chakra-ui/react'
-
+import { Link as ChakraLink, Button } from '@chakra-ui/react'
+import {
+	Breadcrumb,
+	BreadcrumbItem,
+	BreadcrumbLink,
+} from '@chakra-ui/react'
 
 export default function AboutCart() {
 	const [items, setItems] = useState([
@@ -45,12 +50,15 @@ export default function AboutCart() {
 	};
 
 	return <>
-		<div>
-			<ul class="breadcrumb">
-				<li><a href="main">Главная</a></li>
-				<li><a href="cart">Корзина</a></li>
-			</ul>
-		</div>
+		<Breadcrumb>
+      <BreadcrumbItem>
+        <BreadcrumbLink href="#">Главная</BreadcrumbLink>
+      </BreadcrumbItem>
+
+      <BreadcrumbItem>
+        <BreadcrumbLink href="#">Корзина</BreadcrumbLink>
+      </BreadcrumbItem>
+    </Breadcrumb>
 		<h2>Корзина</h2>
 		<table>
 			<thead>
@@ -76,9 +84,9 @@ export default function AboutCart() {
 						<td>{item.name}</td>
 						<td>{item.price}RYB</td>
 						<td>
-							<button onClick={() => handleDecreaseQuantity(item)}>-</button>
+							<Button onClick={() => handleDecreaseQuantity(item)}>-</Button>
 							{item.quantity}
-							<button onClick={() => handleIncreaseQuantity(item)}>+</button>
+							<Button onClick={() => handleIncreaseQuantity(item)}>+</Button>
 						</td>
 						<td>{item.price * item.quantity}</td>
 					</tr>
@@ -87,15 +95,15 @@ export default function AboutCart() {
 		</table>
 		<form>
 			<input type='text' placeholder='Введите промокод'></input>
-			<button>Применить</button>
+			<Button>Применить</Button>
 		</form>
 		<div>
 			<p>К оплате {total}RYB</p>
-			<Link href="/order" passHref>
+			<ChakraLink href="/order" passHref>
 				<Button as="a" onClick={handlePay}>
 					Перейти к оформлению
 				</Button>
-			</Link>
+			</ChakraLink>
 		</div>
 		<Rift />
 	</>
