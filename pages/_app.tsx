@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from '../components/Header/Header.js';
 import Footer from '../components/Footer/Footer.js';
 import Instagram from '../components/Instagram/Instagram.js';
