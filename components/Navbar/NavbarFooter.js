@@ -53,7 +53,7 @@ export default function NavbarFooter() {
 		<div>
 		<ul>
 			<li>
-			    <Link href="/personalArea" legacyBehavior>
+			    <Link href="/signIn" legacyBehavior>
             <div>
                <img src="/img/Header/Frame 1407.png"></img>
             </div>
