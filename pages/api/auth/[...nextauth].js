@@ -1,7 +1,7 @@
-import NextAuth from 'next-auth';
-import CredentialsProvider from 'next-auth/providers/credentials';
-import VkProvider from "next-auth/providers/vk";
-import GoogleProvider from "next-auth/providers/google";
+import NextAuth from 'next-auth'
+import CredentialsProvider from 'next-auth/providers/credentials'
+import GitHubProvider from "next-auth/providers/github"
+import GoogleProvider from "next-auth/providers/google"
 
 
 
@@ -18,29 +18,28 @@ export const authOptions = {
 			clientSecret: process.env.GOOGLE_CLIENT_SECRET
 		}),
 		
-		VkProvider({
-			clientId: process.env.VK_CLIENT_ID,
-			clientSecret: process.env.VK_CLIENT_SECRET
-		}),
+		GitHubProvider({
+            clientId: process.env.GITHUB_ID,
+            clientSecret: process.env.GITHUB_SECRET
+          }),
 
 		CredentialsProvider({
 			name: 'Credentials',
 			credentials: {
-				username: { label: 'Username', type: 'text', placeholder: 'jsmith' },
-				password: { label: 'Password', type: 'password' }
+				username: { label: 'Телефон или электронная почта', type: 'text', placeholder: 'Введите телефон или электронную почту' },
+				password: { label: 'Пароль', type: 'password' }
 			},
 			// eslint-disable-next-line no-unused-vars
 			async authorize(credentials) {
-				console.log('credentials', credentials);
-
-
-				if ('' === credentials.username && '111' === credentials.password)
-					return { id: '1', name: 'J Smith', email: 'jsmith@example.com' };
-				return null;
-			}
-		})
-
-	],
+				if ('79036957460' === credentials.username && '111' === credentials.password) {
+                    return { id: '1', name: 'Ann', email: 'saikotakaki@gmail.com' };
+                  } else if ('saikotakaki@gmail.com' === credentials.username && '111' === credentials.password) {
+                    return { id: '1', name: 'Ann', email: 'saikotakaki@gmail.com' };
+                  } else {
+                    return null;
+			  }
+         }})
+    ],
 
 	callbacks: {
 		async signIn({ user, account, profile, email, credentials }) {

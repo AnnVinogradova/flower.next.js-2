@@ -1,44 +1,33 @@
-import { useSession, signIn, signOut } from 'next-auth/react';
 import React from 'react';
 import { Box, Heading, Button, Input, InputGroup, InputRightElement} from '@chakra-ui/react'
+import { useSession, signIn, signOut } from 'next-auth/react';
 
 export default function Enter() {
-  const { data: session } = useSession();
-  if (session && session.user) {
+	const { data: session } = useSession();
+	if (session && session.user) {
 		console.log('user=', session.user);
 		console.log('session=', session);
-    
-    const [show, setShow] = React.useState(false)
-    const handleClick = () => setShow(!show)
+		return <>
+		{session.user?.email} <br />
+			{session?.user?.image && <img src={session?.user?.image} alt='avatar' width={50} height={50}></img>}
+			{session?.user?.name}
+			<hr></hr>
+			<button colorScheme="green" onClick={() => signOut()}>Выход</button>
+		</>;
+	}
 	return <>
-  {session.user?.email} 
-  {session.user?.phone} 
+  <Box>
     <Box>
     <Heading>
-          Вход в личный кабинет
-        </Heading>
-        <Box>
-        <Input type="text" placeholder='Введите телефон или электронную почту' />
+      Вход в личный кабинет
+     </Heading>
             </Box>
-            <Box>
-            <InputGroup size='md'>
-      <Input
-        pr='4.5rem'
-        type={show ? 'text' : 'password'}
-        placeholder='Enter password'
-      />
-      <InputRightElement width='4.5rem'>
-        <Button h='1.75rem' size='sm' onClick={handleClick}>
-          {show ? 'Hide' : 'Show'}
-        </Button>
-      </InputRightElement>
-    </InputGroup>
+           <Box>
+           <Button colorScheme="blue">Регистрация</Button>
+           <Button colorScheme="green" onClick={() => signIn()}>Вход</Button>
             </Box>
-            <Box>
-            <Button colorScheme="blue">Регистрация</Button>
-            <Button colorScheme="green" onClick={() => signIn()}>Вход</Button>
-            </Box>
-      </Box>
-	</>;
+   </Box>
+	</>
 }
-}
+
+
