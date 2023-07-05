@@ -1,9 +1,18 @@
+import { useSession, signIn, signOut } from 'next-auth/react';
 import React from 'react';
 import { Box, Heading, Button, Input, InputGroup, InputRightElement} from '@chakra-ui/react'
+
 export default function Enter() {
+  const { data: session } = useSession();
+  if (session && session.user) {
+		console.log('user=', session.user);
+		console.log('session=', session);
+    
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
 	return <>
+  {session.user?.email} 
+  {session.user?.phone} 
     <Box>
     <Heading>
           Вход в личный кабинет
@@ -27,8 +36,9 @@ export default function Enter() {
             </Box>
             <Box>
             <Button colorScheme="blue">Регистрация</Button>
-            <Button colorScheme="green">Вход</Button>
+            <Button colorScheme="green" onClick={() => signIn()}>Вход</Button>
             </Box>
       </Box>
 	</>;
+}
 }

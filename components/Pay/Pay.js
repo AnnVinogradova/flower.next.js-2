@@ -1,6 +1,17 @@
+import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Heading, Text, Image, Link, Button } from "@chakra-ui/react";
 export default function Pay(){
     return<>
     <div>
+    <Box>
+        <Breadcrumb>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="main">Главная</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="about">Оплата</BreadcrumbLink>
+          </BreadcrumbItem>
+        </Breadcrumb>
+      </Box>
 	<h2>Оплата</h2>
     <p>Виды оплаты товаров в инернет-магазине стандартно делятся на наличный и безналичный расчет.</p>
         <h4>1. Наличный расчет</h4>

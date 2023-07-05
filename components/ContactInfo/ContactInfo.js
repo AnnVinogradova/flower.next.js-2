@@ -1,12 +1,16 @@
 import Link from "next/link"
+import {Breadcrumb,BreadcrumbItem,BreadcrumbLink} from '@chakra-ui/react'
 export default function ContactInfo(){
     return<>
-    <div>
-<ul class="breadcrumb">
-            <li><a href="main">Главная</a></li>
-            <li><a href="contacts">Контакты</a></li>
-        </ul>
-</div>
+	<Breadcrumb>
+      <BreadcrumbItem>
+        <BreadcrumbLink href="#">Главная</BreadcrumbLink>
+      </BreadcrumbItem>
+
+      <BreadcrumbItem>
+        <BreadcrumbLink href="#">Контакты</BreadcrumbLink>
+      </BreadcrumbItem>
+    </Breadcrumb>
 <div>
     <h3>Контакты</h3>
     <span>Магазин</span>

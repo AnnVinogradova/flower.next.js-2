@@ -1,7 +1,14 @@
-import Link from 'next/link';
-
+import { Box, VStack, Link } from "@chakra-ui/react";
 export default function Sidebar() {
 	return <>
+	<Box w="200px" bg="gray.200" p="4">
+      <VStack spacing="4" align="start">
+        <Link href="/home">Главная</Link>
+        <Link href="/about">О нас</Link>
+        <Link href="/products">Продукты</Link>
+        <Link href="/contact">Контакты</Link>
+      </VStack>
+    </Box>
 		<ul class="breadcrumb">
 			<li><a href="main">Главная</a></li>
 			<li><a href="catalog">Каталог</a></li>
