@@ -2,12 +2,8 @@ import NextAuth from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import GitHubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
-
-
-
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { PrismaClient } from "@prisma/client";
-
 
 const prisma = new PrismaClient();
 export const authOptions = {
@@ -26,14 +22,15 @@ export const authOptions = {
 		CredentialsProvider({
 			name: 'Credentials',
 			credentials: {
-				username: { label: 'Телефон или электронная почта', type: 'text', placeholder: 'Введите телефон или электронную почту' },
+				userphone: { label: 'Телефон', type: 'text', placeholder: 'Введите телефон' },
+				useremail: { label: 'или Электронная почта', type: 'text', placeholder: 'Введите электронную почту' },
 				password: { label: 'Пароль', type: 'password' }
 			},
 			// eslint-disable-next-line no-unused-vars
 			async authorize(credentials) {
-				if ('79036957460' === credentials.username && '111' === credentials.password) {
+				if ('79036957460' === credentials.userphone && '111' === credentials.password) {
                     return { id: '1', name: 'Ann', email: 'saikotakaki@gmail.com' };
-                  } else if ('saikotakaki@gmail.com' === credentials.username && '111' === credentials.password) {
+                  } else if ('saikotakaki@gmail.com' === credentials.useremail && '111' === credentials.password) {
                     return { id: '1', name: 'Ann', email: 'saikotakaki@gmail.com' };
                   } else {
                     return null;
@@ -62,9 +59,7 @@ export const authOptions = {
 		}
 	}
 };
-
 const resf = NextAuth(authOptions);
-
 export default (...params) => {
 	const [req] = params;
 	console.log('pages/api/auth/[...nextauth].js ');

@@ -52,11 +52,11 @@ export default function AboutCart() {
 	return <>
 		<Breadcrumb>
       <BreadcrumbItem>
-        <BreadcrumbLink href="#">Главная</BreadcrumbLink>
+        <BreadcrumbLink href="main">Главная</BreadcrumbLink>
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink href="#">Корзина</BreadcrumbLink>
+        <BreadcrumbLink href="cart">Корзина</BreadcrumbLink>
       </BreadcrumbItem>
     </Breadcrumb>
 		<h2>Корзина</h2>

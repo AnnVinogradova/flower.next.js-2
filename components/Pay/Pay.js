@@ -8,7 +8,7 @@ export default function Pay(){
             <BreadcrumbLink href="main">Главная</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="about">Оплата</BreadcrumbLink>
+            <BreadcrumbLink href="pay">Оплата</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
       </Box>

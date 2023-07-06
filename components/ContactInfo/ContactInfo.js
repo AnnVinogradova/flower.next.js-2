@@ -4,11 +4,11 @@ export default function ContactInfo(){
     return<>
 	<Breadcrumb>
       <BreadcrumbItem>
-        <BreadcrumbLink href="#">Главная</BreadcrumbLink>
+        <BreadcrumbLink href="/main">Главная</BreadcrumbLink>
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink href="#">Контакты</BreadcrumbLink>
+        <BreadcrumbLink href="/contacts">Контакты</BreadcrumbLink>
       </BreadcrumbItem>
     </Breadcrumb>
 <div>

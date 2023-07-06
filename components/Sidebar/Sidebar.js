@@ -1,89 +1,31 @@
-import { Box, VStack, Link } from "@chakra-ui/react";
+import { useState } from 'react'
+import { Box, Button, Checkbox, CheckboxGroup, Collapse, Text } from '@chakra-ui/react'
+
 export default function Sidebar() {
+	const [categoryOpen, setCategoryOpen] = useState(false)
+	const [typeOpen, setTypeOpen] = useState(false)
+  
 	return <>
-	<Box w="200px" bg="gray.200" p="4">
-      <VStack spacing="4" align="start">
-        <Link href="/home">Главная</Link>
-        <Link href="/about">О нас</Link>
-        <Link href="/products">Продукты</Link>
-        <Link href="/contact">Контакты</Link>
-      </VStack>
-    </Box>
-		<ul class="breadcrumb">
-			<li><a href="main">Главная</a></li>
-			<li><a href="catalog">Каталог</a></li>
-		</ul>
-		<div>
-			<h2>Каталог</h2>
-			<img src="/img/Catalog/x.png"></img>
-			<p>Сбросить все</p>
-		</div>
-		<div>
-			<button>Категория</button>
-			<img src="/img/Catalog/Vector.png"></img>
-			<div className="sidebar">
-				<ul>
-					<li>
-						<input type='checkbox'></input>
-						<span>Букеты</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Розы</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Монобукеты</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Срезанные цветы</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Свадебные букеты</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Уличные растения</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Подарки</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Конфеты</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Воздушные шары</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Комнатные растения</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Композиции</span>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div>
-			<button>Вид</button>
-			<img src="/img/Catalog/Vector.png"></img>
-			<div className="sidebar">
-				<ul>
-					<li>
-						<input type='checkbox'></input>
-						<span>Белорусская роза</span>
-					</li>
-					<li>
-						<input type='checkbox'></input>
-						<span>Роза из Эквадора и Колумбии</span>
-					</li>
-					<li>
+	  <Box>
+		<Button onClick={() => setCategoryOpen(!categoryOpen)}>Категория</Button>
+		<Collapse in={categoryOpen}>
+		  <CheckboxGroup colorScheme="teal">
+			<Checkbox>Букеты</Checkbox>
+			<Checkbox>Розы</Checkbox>
+			{/* Добавьте остальные пункты */}
+		  </CheckboxGroup>
+		</Collapse>
+  
+		<Button onClick={() => setTypeOpen(!typeOpen)}>Вид</Button>
+		<Collapse in={typeOpen}>
+		  <CheckboxGroup colorScheme="teal">
+			<Checkbox>Белорусская роза</Checkbox>
+			<Checkbox>Роза из Эквадора и Колумбии</Checkbox>
+			{/* Добавьте остальные пункты */}
+		  </CheckboxGroup>
+		</Collapse>
+	  </Box>
+	  {/* <li>
 						<input type='checkbox'></input>
 						<span>Кенийская роза</span>
 					</li>
@@ -213,6 +155,8 @@ export default function Sidebar() {
 				<li>65-80</li>
 				<li>от 80</li>
 			</ul>
-		</div>
+		</div> */}
 	</>
-}
+	
+  }
+  
