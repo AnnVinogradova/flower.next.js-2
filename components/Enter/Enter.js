@@ -1,33 +1,32 @@
 import React from 'react';
-import { Box, Heading, Button, Input, InputGroup, InputRightElement} from '@chakra-ui/react'
-import { useSession, signIn, signOut } from 'next-auth/react';
+import { Box, Heading, Button } from '@chakra-ui/react';
+import { useSession, signIn } from 'next-auth/react';
+import { useRouter } from 'next/router';
 
 export default function Enter() {
+	const router = useRouter();
 	const { data: session } = useSession();
-	if (session && session.user) {
-		console.log('user=', session.user);
-		console.log('session=', session);
-		return <>
-		{session.user?.email} <br />
-			{session?.user?.image && <img src={session?.user?.image} alt='avatar' width={50} height={50}></img>}
-			{session?.user?.name}
-			<hr></hr>
-			<button colorScheme="green" onClick={() => signOut()}>Выход</button>
-		</>;
-	}
+
+	React.useEffect(() => {
+		if (session) {
+			router.replace('/personalArea');
+		}
+	}, [session]);
+
 	return <>
-  <Box>
-    <Box>
-    <Heading>
-      Вход в личный кабинет
-     </Heading>
-            </Box>
-           <Box>
-           <Button colorScheme="blue">Регистрация</Button>
-           <Button colorScheme="green" onClick={() => signIn()}>Вход</Button>
-            </Box>
-   </Box>
+		<Box>
+			<Box>
+				<Heading>Вход в личный кабинет</Heading>
+			</Box>
+			<Box>
+				<Button colorScheme="blue">Регистрация</Button>
+				<Button colorScheme="green" onClick={() => signIn()}>
+					Вход
+				</Button>
+			</Box>
+		</Box>
 	</>
 }
+
 
 
