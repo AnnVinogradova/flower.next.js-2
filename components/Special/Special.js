@@ -1,13 +1,17 @@
-import { Grid, GridItem } from '@chakra-ui/react'
+import { Grid, GridItem, Box, Text, Link} from '@chakra-ui/react'
 import Block from "./Block";
 import { Image } from '@chakra-ui/react'
 export default function Special() {
 	return <>
-		<div>
-			<h2>Специальное предложение</h2>
-			<p>*На товары раздела скидка не распространяется</p>
-			<a href="/catalog">Перейти в каталог</a>
-		</div>
+	  <Box>
+      <Text fontSize="xl" fontWeight="bold" mb={2}>
+        Специальное предложение
+      </Text>
+      <Text>*На товары раздела скидка не распространяется</Text>
+      <Link href="/catalog" color="blue.500" mt={2}>
+        Перейти в каталог
+      </Link>
+    </Box>
 		<Grid templateColumns='repeat(4, 1fr)' gap={4}>
       <GridItem>
         <Image src='/img/main/Special/1681382334_16030960.jpg' alt='Изображение'></Image>

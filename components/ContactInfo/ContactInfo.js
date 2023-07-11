@@ -47,7 +47,7 @@ export default function ContactInfo(){
 <div>
     <span>Skype</span>
     <Link href="skype:username?call" legacyBehavior>
-  <a>gvozdikaby</a>
+  <p>gvozdikaby</p>
 </Link>
 </div>
 <div>

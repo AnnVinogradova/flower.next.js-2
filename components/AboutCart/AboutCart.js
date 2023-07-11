@@ -99,11 +99,9 @@ export default function AboutCart() {
 		</form>
 		<div>
 			<p>К оплате {total}RYB</p>
-			<ChakraLink href="/order" passHref>
-				<Button as="a" onClick={handlePay}>
+					<Button colorScheme="teal" size="lg" mt={4}>
 					Перейти к оформлению
-				</Button>
-			</ChakraLink>
+			</Button>
 		</div>
 		<Rift />
 	</>
