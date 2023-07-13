@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../components/Header/Header.js'
 import Footer from '../components/Footer/Footer.js'
-import Instagram from '../components/Instagram/Instagram.js'
 import { ChakraProvider } from '@chakra-ui/react'
 import { SessionProvider } from 'next-auth/react'
 
@@ -14,7 +13,6 @@ export default function MyApp({ Component, pageProps: {session, ...pageProps} }:
 	<ChakraProvider>
 		<Header />
 		<Component {...pageProps} />
-		<Instagram />
 		<Footer />
 	</ChakraProvider>
 	</SessionProvider>

@@ -7,6 +7,7 @@ import Rose from '../components/Rose/Rose.js';
 import Comment from '../components/Comment/Comment.js';
 import HeaderFooter from '../components/Header/HeaderFooter.js';
 import HowWork from '../components/HowWork.js';
+import Instagram from '../components/Instagram/Instagram.js'
 
 export default function Main() {
 	return <>
@@ -19,5 +20,6 @@ export default function Main() {
 		<Advantages />
 		<Comment />
 		<HowWork/>
+		<Instagram />
 	</>;
 }
