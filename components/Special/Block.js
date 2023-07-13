@@ -1,14 +1,12 @@
+import { Box, Button, Text } from "@chakra-ui/react";
+
 export default function FlowerBlock(props) {
-	return <>
-		<div>
-			<p>{props.title}</p>
-			<span>{props.price}</span>
-		</div>
-		<div>
-			<button>Заказать</button>
-		</div>
-		<div>
-			<span>Купить в 1 клик</span>
-		</div>
-	</>;
+  return (
+    <Box>
+      <Text>{props.title}</Text>
+      <Text>{props.price}</Text>
+      <Button>Заказать</Button>
+      <Text>Купить в 1 клик</Text>
+    </Box>
+  );
 }

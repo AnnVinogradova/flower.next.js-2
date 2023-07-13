@@ -1,7 +1,7 @@
 import Categories from '../components/Categories/Categories.js'
 import OfferDay from '../components/Day/OfferDay.js';
 import Special from '../components/Special/Special.js';
-import Rift from '../components/Rifts/Rift.js';
+import Gift from '../components/Gifts/Gift.js';
 import Advantages from '../components/Advantages/Advantages.js';
 import Rose from '../components/Rose/Rose.js';
 import Comment from '../components/Comment/Comment.js';
@@ -15,7 +15,7 @@ export default function Main() {
 		<Special />
 		<OfferDay />
 		<Rose />
-		<Rift />
+		<Gift />
 		<Advantages />
 		<Comment />
 		<HowWork/>

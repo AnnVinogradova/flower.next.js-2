@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import Rift from '../Rifts/Rift.js'
+import Rift from '../Gifts/Gift.js'
 import { Link as ChakraLink, Button } from '@chakra-ui/react'
 import {
 	Breadcrumb,
