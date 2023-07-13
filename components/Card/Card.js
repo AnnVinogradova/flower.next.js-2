@@ -1,5 +1,5 @@
 
-import Rift from '../Rifts/Rift.js';
+import Gift from '../Gifts/Gift.js';
 import { Box, Image, Text, VStack, HStack, Select, Button } from '@chakra-ui/react';
 
 export default function Card() {
@@ -83,7 +83,7 @@ export default function Card() {
      <li>Упаковка<span>фетр, крафт или пленка матовая, лента</span></li>
     </ul>
    </VStack>
-   <Rift />
+   <Gift />
   </Box>
  );
 }

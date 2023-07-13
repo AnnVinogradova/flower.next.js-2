@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import Rift from '../Gifts/Gift.js'
+import Gift from '../Gifts/Gift.js'
 import { Link as ChakraLink, Button } from '@chakra-ui/react'
 import {
 	Breadcrumb,
@@ -103,6 +103,6 @@ export default function AboutCart() {
 					Перейти к оформлению
 			</Button>
 		</div>
-		<Rift />
+		<Gift />
 	</>
 };
