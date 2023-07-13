@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Flex, Text, VStack, Divider, Button } from '@chakra-ui/react';
+import { signOut } from 'next-auth/react';
 
 export default function Profile() {
 	const handleSignOut = () => {
