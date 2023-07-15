@@ -5,48 +5,48 @@ export default function Categories() {
     <Box>
       <Flex as="ul" flexWrap="wrap" listStyleType="none" spacing={4}>
         <CategoryItem
-          src="/img/Main/Categories/1.png.png"
+          src="/img/Main/Categories/1.png"
           label="Пионы"
         />
         <CategoryItem
-           src="/img/Main/Categories/2.png.png"
+           src="/img/Main/Categories/2.png"
 		   label="Букеты"
 		   link="/ProductCard"
         />
         <CategoryItem
-          src="/img/Main/Categories/3.png.png"
+          src="/img/Main/Categories/3.png"
           label="Воздушные шары"
         />
         <CategoryItem
-          src="/img/Main/Categories/4.png.png"
+          src="/img/Main/Categories/4.png"
           label="Цветы в корзине"
         />
         <CategoryItem
-          src="/img/Main/Categories/5.png.png"
+          src="/img/Main/Categories/5.png"
           label="Цветы в коробке"
         />
         <CategoryItem
-          src="/img/Main/Categories/6.png.png"
+          src="/img/Main/Categories/6.png"
           label="Сухие цветы"
         />
         <CategoryItem
-          src="/img/Main/Categories/7.png.png"
+          src="/img/Main/Categories/7.png"
           label="Монобукеты"
         />
         <CategoryItem
-         src="/img/Main/Categories/8.png.png"
+         src="/img/Main/Categories/8.png"
           label="Фруктовые букеты"
         />
         <CategoryItem
-          src="/img/Main/Categories/9.png.png"
+          src="/img/Main/Categories/9.png"
           label="Подарочные корзины и наборы"
         />
         <CategoryItem
-          src="/img/Main/Categories/10.png.png"
+          src="/img/Main/Categories/10.png"
           label="Мягкие игрушки"
         />
        <CategoryItem
-  		src="/img/Main/Categories/11.png.png"
+  		src="/img/Main/Categories/11.png"
   		label="Композиции"/>
       </Flex>
     </Box>
