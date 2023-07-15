@@ -14,11 +14,11 @@ export default function Special() {
     </Box>
 		<Grid templateColumns='repeat(4, 1fr)' gap={4}>
       <GridItem>
-        <Image src="/img/main/Gift/2031-igrushka-1-250x333.jpeg" alt='Изображение'></Image>
+        <Image src="/img/Main/Special/1.jpg" alt='Изображение'></Image>
         <Block title='Медвежёнок' price='1500 RUB' />
       </GridItem>
       <GridItem>
-        <Image src="/img/main/Gift/1677741738_30253054.jpg" alt='Изображение'></Image>
+        <Image src="/img/Main/Special/kompozitsiya-2203-0-scaled.jpg" alt='Изображение'></Image>
         <Block title='Открытка котик' price='150 RUB' />
       </GridItem>
       <GridItem>
