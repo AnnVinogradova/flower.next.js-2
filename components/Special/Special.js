@@ -22,7 +22,7 @@ export default function Special() {
         <Block title='Открытка котик' price='150 RUB' />
       </GridItem>
       <GridItem>
-        <Image src="/img/main/Gift/1677741836_49798389.jpg" alt='Изображение'></Image>
+        <Image src="/img/main/Gift/kompozitsiya-2203-0-scaled.jpg" alt='Изображение'></Image>
         <Block title='Открытка с 8 марта' price='130 RUB' />
       </GridItem>
       <GridItem>
