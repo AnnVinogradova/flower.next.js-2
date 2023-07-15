@@ -42,7 +42,7 @@ export default function OfferDay() {
 		<Block title='Божество' price='5500 RUB' />
 		</GridItem>
 		<GridItem>
-		<Image src="/img/main/Special/1681394858_48426908.jpg" alt='Изображение' ></Image>
+		<Image src="/img/main/OfferDay/1681382334_16030960.jpg" alt='Изображение' ></Image>
 		<Block title='Восторг' price='2100 RUB' />
 		</GridItem>
     </Grid>

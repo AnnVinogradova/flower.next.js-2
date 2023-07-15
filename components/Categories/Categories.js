@@ -5,13 +5,29 @@ export default function Categories() {
     <Box>
       <Flex as="ul" flexWrap="wrap" listStyleType="none" spacing={4}>
         <CategoryItem
+          src="/img/Main/Categories/8.png"
+          label="Подарочные корзины и наборы"
+        />
+        <CategoryItem
           src="/img/Main/Categories/1.png"
           label="Пионы"
         />
         <CategoryItem
-           src="/img/Main/Categories/2.png"
-		   label="Букеты"
-		   link="/ProductCard"
+          src="/img/Main/Categories/2.png"
+          label="Букеты"
+          link="/ProductCard"
+        />
+        <CategoryItem
+          src="/img/Main/Categories/11.png"
+          label="Композиции"
+        />
+        <CategoryItem
+          src="/img/Main/Categories/5.png"
+          label="Цветы в коробке"
+        />
+        <CategoryItem
+          src="/img/Main/Categories/10.png"
+          label="Мягкие игрушки"
         />
         <CategoryItem
           src="/img/Main/Categories/3.png"
@@ -22,10 +38,6 @@ export default function Categories() {
           label="Цветы в корзине"
         />
         <CategoryItem
-          src="/img/Main/Categories/5.png"
-          label="Цветы в коробке"
-        />
-        <CategoryItem
           src="/img/Main/Categories/6.png"
           label="Сухие цветы"
         />
@@ -33,21 +45,6 @@ export default function Categories() {
           src="/img/Main/Categories/7.png"
           label="Монобукеты"
         />
-        <CategoryItem
-         src="/img/Main/Categories/8.png"
-          label="Фруктовые букеты"
-        />
-        <CategoryItem
-          src="/img/Main/Categories/9.png"
-          label="Подарочные корзины и наборы"
-        />
-        <CategoryItem
-          src="/img/Main/Categories/10.png"
-          label="Мягкие игрушки"
-        />
-       <CategoryItem
-  		src="/img/Main/Categories/11.png"
-  		label="Композиции"/>
       </Flex>
     </Box>
   );
@@ -55,7 +52,7 @@ export default function Categories() {
 
 function CategoryItem({ src, label, link }) {
   return (
-    <Box as="li" textAlign="center" width={["50%", "33.33%", "25%"]}>
+    <Box as="li" textAlign="center" width="20%">
       <VStack spacing={2}>
         <Image src={src} width={50} height={50} />
         {link ? (
@@ -69,3 +66,4 @@ function CategoryItem({ src, label, link }) {
     </Box>
   );
 }
+
